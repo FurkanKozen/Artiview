@@ -45,7 +45,7 @@ namespace Artiview.Article.WebApi.Controllers
             }
             catch (ArgumentException ex)
             {
-                return BadRequest(ex);
+                return BadRequest();
             }
             return Ok();
         }
@@ -63,7 +63,7 @@ namespace Artiview.Article.WebApi.Controllers
             }
             catch (ArgumentException ex)
             {
-                return BadRequest(ex);
+                return BadRequest();
             }
             return Ok();
         }

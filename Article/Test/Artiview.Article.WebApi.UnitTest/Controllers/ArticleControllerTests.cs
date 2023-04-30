@@ -58,7 +58,7 @@ namespace Artiview.Article.WebApi.UnitTest.Controllers
 
             var result = await articleController.CreateArticle(createArticleReqDto);
 
-            Assert.IsType<BadRequestObjectResult>(result);
+            Assert.IsType<BadRequestResult>(result);
         }
 
         [Fact]
@@ -82,7 +82,7 @@ namespace Artiview.Article.WebApi.UnitTest.Controllers
             subArticleRepository.DeleteArticleAsync(id).Returns(_ => throw new ArgumentException());
             var result = await articleController.DeleteArticle(id);
 
-            Assert.IsType<BadRequestObjectResult>(result);
+            Assert.IsType<BadRequestResult>(result);
         }
         [Fact]
         public async Task DeleteArticle_ArticleHasReviews_Status422()

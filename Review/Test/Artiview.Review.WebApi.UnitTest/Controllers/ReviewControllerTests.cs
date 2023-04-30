@@ -65,7 +65,7 @@ namespace Artiview.Review.WebApi.UnitTest.Controllers
             var result = await reviewController.CreateReview(
                 createReviewReqDto);
 
-            Assert.IsType<BadRequestObjectResult>(result);
+            Assert.IsType<BadRequestResult>(result);
         }
         [Fact]
         public async Task CreateReview_ReviewDoesNotBelongToArticle_Status422()
@@ -102,7 +102,7 @@ namespace Artiview.Review.WebApi.UnitTest.Controllers
             subReviewRepository.DeleteReviewAsync(Guid.Empty).ReturnsForAnyArgs(_ => throw new ArgumentException());
             var result = await reviewController.DeleteReview(Guid.Empty);
 
-            Assert.IsType<BadRequestObjectResult>(result);
+            Assert.IsType<BadRequestResult>(result);
         }
 
         [Fact]
