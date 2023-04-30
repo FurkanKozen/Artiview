@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  artiview.article.webapi:
+    image: ${DOCKER_REGISTRY-}artiview/article/webapi
+    ports:
+      - "50000:80"
+    environment:
+      - "ASPNETCORE_ENVIRONMENT=Development"
+    container_name: artiview.article.webapi
+    build:
+      context: .
+      dockerfile: Article/Artiview.Article.WebApi/Dockerfile
+      
+  artiview.review.webapi:
+    image: ${DOCKER_REGISTRY-}artiview/review/webapi
+    ports:
+      - "50001:80"
+    environment:
+      - "ASPNETCORE_ENVIRONMENT=Development"
+    container_name: artiview.review.webapi
+    build:
+      context: .
+      dockerfile: Review/Artiview.Review.WebApi/Dockerfile
+  
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    ports:
+      - "14330:1433"
+    environment:
+      - "ACCEPT_EULA=Y"
+      - "MSSQL_SA_PASSWORD=FdvyCcY1877"
+      - "MSSQL_PID=Express"
+    container_name: mssql
+
+networks:
+  default:
+    name: artiview

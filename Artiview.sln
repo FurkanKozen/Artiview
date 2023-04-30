@@ -25,11 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Artiview.Review.WebApi", "R
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{06D87014-6E84-4868-8512-BED702304F4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artiview.Article.WebApi.UnitTest", "Article\Test\Artiview.Article.WebApi.UnitTest\Artiview.Article.WebApi.UnitTest.csproj", "{ADD02D09-FB19-408E-B739-69C7B8A00BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Artiview.Article.WebApi.UnitTest", "Article\Test\Artiview.Article.WebApi.UnitTest\Artiview.Article.WebApi.UnitTest.csproj", "{ADD02D09-FB19-408E-B739-69C7B8A00BEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E6165C64-F946-4D51-B841-BFF722C2A166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artiview.Review.WebApi.UnitTest", "Review\Test\Artiview.Review.WebApi.UnitTest\Artiview.Review.WebApi.UnitTest.csproj", "{AC83F6F7-06B9-4384-AC3A-D4FA31CEC94F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Artiview.Review.WebApi.UnitTest", "Review\Test\Artiview.Review.WebApi.UnitTest\Artiview.Review.WebApi.UnitTest.csproj", "{AC83F6F7-06B9-4384-AC3A-D4FA31CEC94F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DAD55CCF-43C5-49E3-AD46-FC444CA9451E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{AC83F6F7-06B9-4384-AC3A-D4FA31CEC94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC83F6F7-06B9-4384-AC3A-D4FA31CEC94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC83F6F7-06B9-4384-AC3A-D4FA31CEC94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD55CCF-43C5-49E3-AD46-FC444CA9451E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD55CCF-43C5-49E3-AD46-FC444CA9451E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD55CCF-43C5-49E3-AD46-FC444CA9451E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD55CCF-43C5-49E3-AD46-FC444CA9451E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
