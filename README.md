@@ -2,8 +2,7 @@
 Kloia case with simple microservices.
 
 ## How to Run?
-- For Windows, run `dockerize.bat`.
-- For Mac and Linux, run commands in `dockerize.bat` file in order in terminal.
+Run `docker-compose up` from terminal or start from Visual Studio.
 
 ### Services
 - Article Service: http://localhost:50000/swagger/index.html
